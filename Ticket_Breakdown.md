@@ -18,6 +18,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 ## Your Breakdown Here
 
 **Ticket 1: Add custom Agent id field to database**
+- Description:
+	- Add a new field to the "Agents" table in the database to store the custom id for each Agent as assigned by the Facility. The custom id should be unique within the context of each Facility.
 - Acceptance Criteria:
 	- A new field named "custom_id" should be added to the "Agents" table in the database.
 	- The "custom_id" field should be able to store alphanumeric values and should have a maximum length of 50 characters.
@@ -28,6 +30,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 	- Implement a unique constraint on the "custom_id" field within the context of a Facility.
 
 **Ticket 2: Modify getShiftsByFacility function**
+- Description:
+	- Modify the "getShiftsByFacility" function to return the custom id for each Agent, in addition to the internal id.
 - Acceptance Criteria:
 	- The "getShiftsByFacility" function should now return the custom id for each Agent, along with the internal id.
 - Time/Effort Estimate: 1 hour
@@ -36,6 +40,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 	- Ensure that the custom id is included in the metadata returned by the function.
 
 **Ticket 3: Modify generateReport function**
+- Description:
+	 - Modify the "generateReport" function to use the custom id instead of the internal id when generating the report.
 - Acceptance Criteria:
 	- The "generateReport" function should now use the custom id instead of the internal id when generating the report.
 - Time/Effort Estimate: 2 hours
@@ -44,6 +50,8 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 	- Update the PDF template used by the "generateReport" function to include the custom id.
 
 **Ticket 4: Test and Deploy Changes**
+- Description:
+	- Test the changes made in Tickets 1-3 and deploy them to the production environment.
 - Acceptance Criteria:
 	- All changes should be thoroughly tested and should not introduce any bugs.
 	- The new feature should be deployed to the production environment.
